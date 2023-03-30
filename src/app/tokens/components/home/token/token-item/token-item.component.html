@@ -1,0 +1,32 @@
+<div *ngIf="token">
+  <div class="border-card" draggable=true>
+    <div class="card-type-icon with-border">
+      <img alt="image" src="./../../../../../../assets/img/card-img.jpeg" class="img-fluid rounded-circle" />
+    </div>
+    <div class="content-wrapper">
+      <div class="label-group">
+        <p class="title">{{token.name}}</p>
+        <p class="caption">{{token.owner}} -- created at -- {{token.created_date}} </p>
+      </div>
+    </div>
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>visibility</mat-icon>
+        <span>See details</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>share</mat-icon>
+        <span>Share</span>
+      </button>
+    </mat-menu>
+  </div>
+</div>
+
+
+
+
+
+<!--<i class="material-icons">insert_drive_file</i>-->

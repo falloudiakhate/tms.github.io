@@ -1,0 +1,51 @@
+<!-- Toolbar -->
+<mat-toolbar color="primary">
+    <button mat-icon-button aria-label="Fermer le menu" (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span routerLink="/">Token Managemnet System</span>
+</mat-toolbar>
+<!-- End Toolbar-->
+
+<!-- Sidenav -->
+<mat-drawer-container class="tms-content">
+    <!-- Drawer -->
+    <mat-drawer #drawer class="tms-content-sidenav" mode="side" opened>
+        <!-- search part -->
+        <mat-form-field class="tms-sidebar-search-input">
+            <mat-icon matPrefix>search</mat-icon>
+            <input type="text" matInput placeholder="Searching ...">
+        </mat-form-field>
+        <!-- End search part -->
+
+        <!-- Features list -->
+
+        <mat-list class="item-content">
+            <mat-list-item role="listitem" routerLink="/tokens/home">
+                <mat-icon>generating_tokens</mat-icon> Tokens
+            </mat-list-item>
+            <mat-list-item role="listitem" routerLink="/tokens/collections">
+                <mat-icon>collections_bookmark</mat-icon> Collections
+            </mat-list-item>
+            <mat-list-item role="listitem">
+                <mat-icon>build</mat-icon> Autres
+            </mat-list-item>
+        </mat-list>
+
+        <!-- End Features list-->
+
+
+    </mat-drawer>
+    <!-- End Drawer-->
+
+    <!-- Main -->
+    <div class="content-main">
+
+        <router-outlet></router-outlet>
+
+    </div>
+    <!-- End Main -->
+
+
+</mat-drawer-container>
+<!-- End Sidenav -->

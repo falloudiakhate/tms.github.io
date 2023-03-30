@@ -1,0 +1,18 @@
+<div class="container p-4 m-auto">
+  <ng-container *ngIf="token$ | async as result" [ngSwitch]="result.dataState">
+    <ng-container *ngSwitchCase="DataStateEnum.LOADING">
+      loading...
+    </ng-container>
+    <ng-container *ngSwitchCase="DataStateEnum.ERROR">
+      <div class="alert-danger">{{result.errorMessage}}</div>
+    </ng-container>
+    <ng-container *ngSwitchCase="DataStateEnum.LOADED">
+      <div class="container" *ngIf="token$">
+          <app-token-item
+            [token]="p"
+            (evenEmitter)="onActionEvent($event)"
+            *ngFor="let p of result.data" style="display: contents" ></app-token-item>
+      </div>
+    </ng-container>
+  </ng-container>
+</div>

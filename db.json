@@ -1,0 +1,130 @@
+{
+  "tokens": [
+    {
+      "id": 1,
+      "name": "Lumin",
+      "content": "xxxxx.yyyyy.zzzzz",
+      "owner": "John Doe",
+      "description": "Token usage description",
+      "created_date": "23/03/2023",
+      "collections": [1,2],
+      "image_url": "https://unsplash.com/photos/TCeLsqJ2fI4"
+    },
+    {
+      "id": 2,
+      "name": "Mystic",
+      "content": "aaaaa.bbbbb.ccccc",
+      "owner": "Jane Smith",
+      "description": "Token usage description",
+      "created_date": "24/03/2023",
+      "collections": [2,3],
+      "image_url": "https://unsplash.com/photos/u3yyYID6eP4"
+    },
+    {
+      "id": 3,
+      "name": "Radius",
+      "content": "qqqqq.wwwww.eeeee",
+      "owner": "Bob Johnson",
+      "description": "Token usage description",
+      "created_date": "25/03/2023",
+      "collections": [3,4],
+      "image_url": "https://unsplash.com/photos/GAbVgtAREo8"
+    },
+    {
+      "id": 4,
+      "name": "Radiance",
+      "content": "qqqqq.wwwww.eeeee",
+      "owner": "Bob Johnson",
+      "description": "Token usage description",
+      "created_date": "25/03/2023",
+      "collections": [1, 4],
+      "image_url": "https://unsplash.com/photos/HkAmqXarUBo"
+    },
+    {
+      "id": 5,
+      "name": "Shine",
+      "content": "rrrrr.ttttt.yyyyy",
+      "owner": "Emily Brown",
+      "description": "Token usage description",
+      "created_date": "26/03/2023",
+      "collections": [2, 3],
+      "image_url": "https://unsplash.com/photos/JVtlG3dU1yY"
+    },
+    {
+      "id": 6,
+      "name": "Solar",
+      "content": "ddddd.eeeee.fffff",
+      "owner": "Jack Smith",
+      "description": "Token usage description",
+      "created_date": "23/03/2023",
+      "collections": [2,4],
+      "image_url": "https://unsplash.com/photos/JHyiw_dpALk"
+    },
+    {
+      "id": 7,
+      "name": "Stellar",
+      "content": "ggggg.hhhhh.iiiii",
+      "owner": "Jill Smith",
+      "description": "Token usage description",
+      "created_date": "23/03/2023",
+      "collections": [3,4],
+      "image_url": "https://unsplash.com/photos/_ok8uVzL2gI"
+    },
+    {
+      "id": 8,
+      "name": "Spark",
+      "content": "aaaaa.bbbbb.ccccc",
+      "owner": "Jane Doe",
+      "description": "Token usage description",
+      "created_date": "24/03/2023",
+      "collections": [1],
+      "image_url": "https://unsplash.com/photos/_Ch_onWf38o"
+    },
+    {
+      "id": 9,
+      "name": "Flare",
+      "content": "11111.22222.33333",
+      "owner": "John Smith",
+      "description": "Token usage description",
+      "created_date": "25/03/2023",
+      "collections": [2],
+      "image_url": "https://unsplash.com/photos/fAoHMlwAzVg"
+    },
+    {
+      "id": 2,
+      "name": "Glow",
+      "content": "aaaaa.bbbbb.ccccc",
+      "owner": "jane doe",
+      "description": "another token usage description",
+      "created_date": "24/03/2023",
+      "collections": [1,3],
+      "image_url": "https://unsplash.com/photos/fSfr0Luh5Ag"
+    }
+  ],
+  "collections": [
+    {
+      "id": 1,
+      "name": "Sciences",
+      "icon": "fa-star",
+      "list_token": [1,2,3,4,5,6,7,8,9,10]
+    },
+    {
+      "id": 2,
+      "name": "Arts",
+      "icon": "fa-palette",
+      "list_token": [1,2,3,4,5,6,7,8,9,10]
+    },
+    {
+      "id": 3,
+      "name": "Technology",
+      "icon": "fa-laptop",
+      "list_token": [1,2,3,4,5,6,7,8,9,10]
+    },
+    {
+      "id": 4,
+      "name": "Sports",
+      "icon": "fa-futbol",
+      "list_token": [1,2,3,4,5,6,7,8,9,10]
+    }
+  ]
+}

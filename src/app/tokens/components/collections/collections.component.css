@@ -1,0 +1,25 @@
+.tms-content-header-btn {
+  margin-inline: 5px;
+}
+
+.tms-content-header-spacer {
+  flex: 1 1 auto;
+}
+
+.tms-table-filter-form {
+  font-size: 14px;
+  width: 100%;
+  margin: 15px;
+}
+
+table {
+  width: 100%;
+  margin: 10px;
+}
+
+.tms-content-header-last {
+  margin-right: 10px;
+}
+.tms-mt{
+  margin-left: -100px;
+}

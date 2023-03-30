@@ -1,0 +1,30 @@
+<mat-toolbar color="secondary">
+    <button mat-raised-button class="btn-content-header" color="primary">
+        <mat-icon>add</mat-icon>
+        Add New
+    </button>
+    <button mat-raised-button class="tms-content-header-btn" color="accent">
+        <mat-icon>person_add</mat-icon>
+        Share
+    </button>
+    <button mat-raised-button class="tms-content-header-btn" color="accent">
+        <mat-icon>history</mat-icon>
+        View History
+    </button>
+    <span class="tms-content-header-spacer"></span>
+    <button mat-button [matMenuTriggerFor]="menu" class="tms-content-header-btn">My Accounts
+        <mat-icon>arrow_drop_down</mat-icon></button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+    </mat-menu>
+    <mat-icon class="tms-content-header-last">notifications_active</mat-icon>
+</mat-toolbar>
+
+<div>
+  <app-token [token$]="token$" (tokensEventEmiter)="OnActionEvent($event)"></app-token>
+</div>
+
+
+
+
